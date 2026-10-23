@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b18" />
+
+    <meta
+      name="description"
+      content="Yash Lawaniya's Data Analyst portfolio featuring projects in SQL, Python, Power BI, Excel, and business intelligence."
+    />
+
+    <title>Yash Lawaniya | Data Analyst Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Animated background -->
+    <canvas id="stars" aria-hidden="true"></canvas>
+
+    <!-- Navigation -->
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="Yash Lawaniya home">
+        Yash Lawaniya <span> .</span>
+        <small>DATA / INSIGHTS</small>
+      </a>
+
+      <button
+        id="menu"
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="nav"
+        type="button"
+      >
+        ☰
+      </button>
+
+      <nav id="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#work">Projects</a>
+        <a href="#skills">Toolkit</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =====================================
+             HERO
+        ====================================== -->
+      <section class="hero wrap" id="home">
+        <div class="intro reveal">
+          <p class="eyebrow">
+            <i></i>
+            OPEN TO DATA &amp; ANALYTICS OPPORTUNITIES
+          </p>
+
+          <p class="mono">HELLO, I'M YASH LAWANIYA</p>
+
+          <h1>
+            I turn raw data
+            <br />
+            into <b>clear signals.</b>
+          </h1>
+
+          <p class="desc">
+            Data Analyst · Curious problem-solver · Storyteller with numbers.
+            <br />
+            I explore patterns, build useful dashboards, and translate analysis
+            into meaningful insights.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="#work"> Explore my work ↓ </a>
+
+            <a
+              class="btn"
+              href="assets/Yash_Lawaniya_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View résumé ↗
+            </a>
+          </div>
+
+          <p class="meta">
+            BASED IN INDIA
+            <span>—</span>
+            PYTHON / SQL / POWER BI / EXCEL
+          </p>
+        </div>
+
+        <!-- Visual illustration -->
+        <div class="visual reveal">
+          <div class="orbit o1"></div>
+          <div class="orbit o2"></div>
+
+          <svg
+            class="constellation"
+            viewBox="0 0 500 470"
+            role="img"
+            aria-label="Connected data points representing the journey from data to insights"
+          >
+            <defs>
+              <linearGradient id="lineGradient">
+                <stop offset="0%" stop-color="#61f4ef" />
+                <stop offset="100%" stop-color="#a68aff" />
+              </linearGradient>
+            </defs>
+
+            <g
+              opacity=".7"
+              stroke="url(#lineGradient)"
+              stroke-width="1.3"
+              fill="none"
+            >
+              <path d="M55 110L145 55L210 130L310 65L385 130L455 90" />
+              <path
+                d="M55 110L105 240L210 130L245 270L385 130L420 285L455 90"
+              />
+              <path
+                d="M105 240L75 365L190 400L245 270L330 385L420 285L455 400"
+              />
+              <path d="M145 55L190 400" />
+              <path d="M310 65L330 385" />
+              <path d="M55 110L190 400" />
+              <path d="M210 130L420 285" />
+            </g>
+
+            <g fill="#61f4ef">
+              <circle cx="55" cy="110" r="4" />
+              <circle cx="145" cy="55" r="3" />
+              <circle cx="210" cy="130" r="5" />
+              <circle cx="310" cy="65" r="4" />
+              <circle cx="385" cy="130" r="4" />
+              <circle cx="105" cy="240" r="4" />
+              <circle cx="245" cy="270" r="5" />
+              <circle cx="190" cy="400" r="3" />
+              <circle cx="330" cy="385" r="4" />
+            </g>
+
+            <g fill="#a68aff">
+              <circle cx="455" cy="90" r="4" />
+              <circle cx="75" cy="365" r="3" />
+              <circle cx="420" cy="285" r="4" />
+              <circle cx="455" cy="400" r="4" />
+            </g>
+
+            <circle
+              cx="250"
+              cy="230"
+              r="62"
+              fill="#0b1528"
+              stroke="#61f4ef"
+              stroke-opacity=".7"
+            />
+
+            <circle
+              class="spin"
+              cx="250"
+              cy="230"
+              r="83"
+              fill="none"
+              stroke="#a68aff"
+              stroke-dasharray="3 8"
+            />
+
+            <text
+              x="250"
+              y="225"
+              text-anchor="middle"
+              fill="#61f4ef"
+              font-size="12"
+            >
+              DATA
+            </text>
+
+            <text
+              x="250"
+              y="245"
+              text-anchor="middle"
+              fill="white"
+              font-size="17"
+            >
+              → INSIGHT
+            </text>
+          </svg>
+
+          <div class="tag t1">
+            ● PATTERNS FOUND
+            <b>+01</b>
+          </div>
+
+          <div class="tag t2">
+            SIGNAL / NOISE
+            <b>HIGH</b>
+          </div>
+
+          <p class="caption">FIG. 01 — THE INSIGHT CONSTELLATION</p>
+        </div>
+
+        <a class="scroll" href="#about"> ↓ SCROLL TO EXPLORE </a>
+      </section>
+
+      <!-- =====================================
+             ABOUT
+        ====================================== -->
+      <section class="wrap section" id="about">
+        <p class="label"><span>01</span> / THE APPROACH</p>
+
+        <div class="two">
+          <h2>
+            Good analysis isn't just about numbers.
+            <br />
+            <em>It's about what they mean.</em>
+          </h2>
+
+          <div class="copy">
+            I'm a Computer Science and Engineering graduate who enjoys finding
+            the story inside a dataset. From cleaning untidy records to
+            exploring customer behaviour and building dashboards, I focus on
+            making information easier to understand and act on.
+
+            <p class="muted">
+              Ask a better question. Check the data. Find the signal.
+              Communicate the insight.
+            </p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div>
+            <strong>8,790</strong>
+            <small>NETFLIX TITLES ANALYSED</small>
+          </div>
+
+          <div>
+            <strong>3,900</strong>
+            <small>CUSTOMER RECORDS EXPLORED</small>
+          </div>
+
+          <div>
+            <strong>8.23<span> /10</span></strong>
+            <small>B.TECH CGPA</small>
+          </div>
+
+          <div>
+            <strong>05</strong>
+            <small>FEATURED PROJECTS</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+             PROJECTS
+        ====================================== -->
+      <section class="wrap section" id="work">
+        <p class="label">
+          <span>02</span> / SELECTED WORK
+          <small>QUESTIONS EXPLORED WITH DATA</small>
+        </p>
+
+        <div class="heading">
+          <h2>
+            From dataset
+            <br />
+            to <b>discovery.</b>
+          </h2>
+
+          <p>
+            Each project starts with a question.
+            <br />
+            Here's how I investigate it.
+          </p>
+        </div>
+
+        <!-- PROJECT 1: NETFLIX -->
+        <article class="project reveal">
+          <div class="art netflix">
+            <p>
+              CASE 001 / CONTENT INTELLIGENCE
+              <span>PYTHON · EDA</span>
+            </p>
+
+            <h3>Net<span>flix.</span></h3>
+
+            <div class="chart">
+              <div class="donut">
+                <div>
+                  <b>69.69%</b>
+                  <small>MOVIES</small>
+                </div>
+              </div>
+
+              <div class="legend">
+                <p>
+                  <span>🔴 Movies</span>
+                  <b>69.69%</b>
+                </p>
+
+                <p>
+                  <span>🟣 TV Shows</span>
+                  <b>30.31%</b>
+                </p>
+
+                <small>CONTENT MIX / n=8,790</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="details">
+            <p class="label">01 / EXPLORATORY DATA ANALYSIS</p>
+
+            <h3>What does Netflix choose to show us?</h3>
+
+            <p>
+              Cleaned and explored 8,790 titles to understand content mix,
+              country-wise production, release-year trends, and ratings.
+            </p>
+
+            <aside>
+              <small>KEY SIGNAL</small>
+              <p>Movies make up <b>69.69%</b> of the analysed catalogue.</p>
+            </aside>
+
+            <div class="chips">Python · Pandas · Matplotlib · Plotly</div>
+
+            <a
+              class="link"
+              href="https://github.com/Yashlawaniya"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explore on GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: CUSTOMER SHOPPING BEHAVIOUR -->
+        <article class="project reveal">
+          <div class="art shopping">
+            <p>
+              CASE 002 / CUSTOMER INTELLIGENCE
+              <span>SQL · BI</span>
+            </p>
+
+            <h3>
+              SHOPPING
+              <br />
+              <b>BEHAVIOUR</b>
+            </h3>
+
+            <div class="bars" aria-label="Illustrative bar chart">
+              <i style="height: 38%"></i>
+              <i style="height: 56%"></i>
+              <i style="height: 47%"></i>
+              <i style="height: 78%"></i>
+              <i style="height: 65%"></i>
+              <i style="height: 92%"></i>
+              <i style="height: 73%"></i>
+              <i style="height: 100%"></i>
+            </div>
+
+            <small> 3,900 CUSTOMER RECORDS · SEGMENT / ANALYSE / ACT </small>
+          </div>
+
+          <div class="details">
+            <p class="label">02 / CUSTOMER BEHAVIOUR</p>
+
+            <h3>What shapes customer shopping behaviour?</h3>
+
+            <p>
+              Developed an end-to-end analysis workflow using Python for data
+              preparation, PostgreSQL for data storage, SQL for analysis, and
+              Power BI for visualisation.
+            </p>
+
+            <aside>
+              <small>THE WORKFLOW</small>
+              <p>Python → PostgreSQL → SQL analysis → Power BI dashboard.</p>
+            </aside>
+
+            <div class="chips">Python · PostgreSQL · SQL · Power BI</div>
+
+            <a
+              class="link"
+              href="https://lnkd.in/p/gsMVzW5C"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View project on LinkedIn ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: STARBUCKS -->
+        <article class="project reveal">
+          <div class="art starbucks">
+            <p>
+              CASE 003 / BEVERAGE INTELLIGENCE
+              <span>POWER BI · DASHBOARD</span>
+            </p>
+
+            <h3>
+              STARBUCKS
+              <br />
+              <b>BEVERAGE ANALYTICS</b>
+            </h3>
+
+            <div class="starbucks-metrics">
+              <div>
+                <strong>33</strong>
+                <small>BEVERAGES</small>
+              </div>
+
+              <div>
+                <strong>194.30</strong>
+                <small>AVG. CALORIES</small>
+              </div>
+
+              <div>
+                <strong>33.02g</strong>
+                <small>AVG. SUGAR</small>
+              </div>
+
+              <div>
+                <strong>81mg</strong>
+                <small>AVG. CAFFEINE</small>
+              </div>
+            </div>
+
+            <small> COMPARE NUTRITION · EXPLORE BEVERAGE OPTIONS </small>
+          </div>
+
+          <div class="details">
+            <p class="label">03 / POWER BI DASHBOARD</p>
+
+            <h3>What's inside popular Starbucks beverages?</h3>
+
+            <p>
+              Created a Power BI dashboard to compare beverage nutrition,
+              including calories, sugar, and caffeine, making differences across
+              drinks easier to explore.
+            </p>
+
+            <aside>
+              <small>KEY SNAPSHOT</small>
+              <p>
+                33 beverages analysed · 194.30 average calories · 33.02g average
+                sugar · 81mg average caffeine.
+              </p>
+            </aside>
+
+            <div class="chips">Power BI · DAX · Data Visualisation</div>
+
+            <a
+              class="link"
+              href="https://lnkd.in/p/gNBcE45W"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View project on LinkedIn ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: E-COMMERCE SALES -->
+        <article class="project reveal">
+          <div class="art ecommerce">
+            <p>
+              CASE 004 / SALES INTELLIGENCE
+              <span>POWER BI · DAX</span>
+            </p>
+
+            <h3>
+              E-COMMERCE
+              <br />
+              <b>SALES DASHBOARD</b>
+            </h3>
+
+            <div class="ecommerce-metrics">
+              <div>
+                <small>TOTAL SALES</small>
+                <strong>₹139K</strong>
+              </div>
+
+              <div>
+                <small>TOTAL PROFIT</small>
+                <strong>₹18K</strong>
+              </div>
+            </div>
+
+            <div
+              class="mini-chart"
+              aria-label="Illustrative monthly sales chart"
+            >
+              <i style="height: 35%"></i>
+              <i style="height: 52%"></i>
+              <i style="height: 43%"></i>
+              <i style="height: 70%"></i>
+              <i style="height: 60%"></i>
+              <i style="height: 88%"></i>
+              <i style="height: 76%"></i>
+              <i style="height: 100%"></i>
+            </div>
+
+            <small> SALES · PROFIT · QUANTITY · CUSTOMER INSIGHTS </small>
+          </div>
+
+          <div class="details">
+            <p class="label">04 / SALES PERFORMANCE ANALYSIS</p>
+
+            <h3>Which products and regions drive sales?</h3>
+
+            <p>
+              Developed an interactive dashboard to explore sales, profit,
+              quantity, and average order value across regions, categories,
+              customers, payment methods, and monthly trends.
+            </p>
+
+            <aside>
+              <small>KEY SNAPSHOT</small>
+              <p>
+                ₹139K sales and ₹18K profit, as presented in the project
+                dashboard.
+              </p>
+            </aside>
+
+            <div class="chips">
+              Power BI · DAX · Data Modelling · Visualisation
+            </div>
+
+            <a
+              class="link"
+              href="https://lnkd.in/p/gqZH_DiH"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View project on LinkedIn ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 5: CALL CENTER -->
+        <article class="project reveal">
+          <div class="art callcenter">
+            <p>
+              CASE 005 / CUSTOMER OPERATIONS
+              <span>EXCEL · KPI</span>
+            </p>
+
+            <h3>
+              CALL CENTER
+              <br />
+              <b>PERFORMANCE</b>
+            </h3>
+
+            <div class="callcenter-kpis">
+              <div>
+                <strong>01</strong>
+                <small>CALL VOLUME</small>
+              </div>
+
+              <div>
+                <strong>02</strong>
+                <small>REVENUE</small>
+              </div>
+
+              <div>
+                <strong>03</strong>
+                <small>RATINGS</small>
+              </div>
+            </div>
+
+            <div class="mini-chart">
+              <i style="height: 42%"></i>
+              <i style="height: 70%"></i>
+              <i style="height: 55%"></i>
+              <i style="height: 90%"></i>
+              <i style="height: 62%"></i>
+              <i style="height: 80%"></i>
+              <i style="height: 68%"></i>
+              <i style="height: 100%"></i>
+            </div>
+
+            <small> CALLS · DURATION · REVENUE · AGENT PERFORMANCE </small>
+          </div>
+
+          <div class="details">
+            <p class="label">05 / OPERATIONAL ANALYTICS</p>
+
+            <h3>How can call centre performance be monitored?</h3>
+
+            <p>
+              Built an Excel dashboard using Pivot Tables, Pivot Charts,
+              slicers, and dynamic KPI cards to explore call volume, revenue,
+              call duration, customer ratings, monthly trends, and agent
+              performance.
+            </p>
+
+            <aside>
+              <small>ANALYTICAL APPROACH</small>
+              <p>
+                Interactive reporting to make operational trends and performance
+                comparisons easier to understand.
+              </p>
+            </aside>
+
+            <div class="chips">
+              Excel · Pivot Tables · Pivot Charts · Slicers
+            </div>
+
+            <a
+              class="link"
+              href="https://lnkd.in/p/ggqB7X_K"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View project on LinkedIn ↗
+            </a>
+          </div>
+        </article>
+
+        <p class="muted footnote">
+          Project preview graphics are illustrative representations. Use the
+          project links to explore the original posts and work.
+        </p>
+      </section>
+
+      <!-- =====================================
+             TOOLKIT
+        ====================================== -->
+      <section class="wrap section" id="skills">
+        <p class="label"><span>03</span> / MY TOOLKIT</p>
+
+        <div class="two">
+          <h2>
+            Tools are useful.
+            <br />
+            <b>Questions matter more.</b>
+          </h2>
+
+          <div class="tool-list">
+            <div>
+              <span>01</span>
+
+              <section>
+                <h3>Analyse &amp; explore</h3>
+                <p>Python · Pandas · EDA · Data Cleaning</p>
+              </section>
+
+              <b>⌘</b>
+            </div>
+
+            <div>
+              <span>02</span>
+
+              <section>
+                <h3>Query &amp; structure</h3>
+                <p>SQL · PostgreSQL · MySQL · DBMS</p>
+              </section>
+
+              <b>⌗</b>
+            </div>
+
+            <div>
+              <span>03</span>
+
+              <section>
+                <h3>Visualise &amp; communicate</h3>
+                <p>Power BI · Advanced Excel · DAX · Data Visualisation</p>
+              </section>
+
+              <b>◫</b>
+            </div>
+
+            <div>
+              <span>04</span>
+
+              <section>
+                <h3>Think in systems</h3>
+                <p>Requirements Analysis · SDLC · OOP · Java</p>
+              </section>
+
+              <b>◎</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+             JOURNEY
+        ====================================== -->
+      <section class="wrap section" id="journey">
+        <p class="label"><span>04</span> / THE JOURNEY</p>
+
+        <h2>
+          Different experiences.
+          <br />
+          <b>One analytical mindset.</b>
+        </h2>
+
+        <div class="timeline">
+          <article>
+            <small>JAN 2026 — JUL 2026</small>
+
+            <div>
+              <h3>
+                Business Development Counsellor
+                <span>· PlanetSpark</span>
+              </h3>
+
+              <p>
+                Worked with learners and parents to understand their
+                requirements, communicate solutions, maintain follow-ups, and
+                manage customer interactions.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <small>AUG 2025 — SEP 2025</small>
+
+            <div>
+              <h3>
+                Software Engineer Intern
+                <span>· CARS24</span>
+              </h3>
+
+              <p>
+                Worked on a full-stack road trip planning application, including
+                user-facing flows, authentication, and trip creation.
+                Co-certified by MentorMind and CARS24.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <small>2022 — 2026</small>
+
+            <div>
+              <h3>
+                B.Tech, Computer Science &amp; Engineering
+                <span>· HCST / AKTU</span>
+              </h3>
+
+              <p>
+                Graduated with an 8.23 CGPA, building a foundation in
+                programming, databases, systems thinking, and analytical
+                problem-solving.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="certs">
+          <small>CERTIFICATIONS &amp; RECOGNITION</small>
+
+          <p>
+            Google Project Management · Introduction to Business Analysis (IBM /
+            Coursera) · Full-Stack Web Development with AI · HackerRank 5-Star
+            Badge in Java
+          </p>
+        </div>
+      </section>
+
+      <!-- =====================================
+             CONTACT
+        ====================================== -->
+      <section class="wrap contact section" id="contact">
+        <p class="label"><span>05</span> / NEXT SIGNAL</p>
+
+        <p class="eyebrow">HAVE A QUESTION, ROLE, OR DATASET?</p>
+
+        <h2>
+          Let's find the
+          <br />
+          <b>signal together.</b>
+        </h2>
+
+        <p class="muted">
+          Open to entry-level opportunities in data analysis and business
+          intelligence.
+        </p>
+
+        <a
+          class="btn primary"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=yashlawaniya2804@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Email me ↗
+        </a>
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/yashlawaniya"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            href="https://github.com/Yashlawaniya"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+          <a
+            href="assets/Yash_Lawaniya_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Résumé ↗
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a class="logo footer-logo" href="#home"> Y<span>.</span> </a>
+
+      <small>
+        BUILT WITH CURIOSITY · YASH LAWANIYA ©
+        <span id="year"></span>
+      </small>
+
+      <a href="#home">BACK TO TOP ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
